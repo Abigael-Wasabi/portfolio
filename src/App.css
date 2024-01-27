@@ -1,0 +1,95 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-column {
+  width: calc(25% - 20px); /* Adjust column width as needed */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skill-icon {
+  max-width: 100%;
+  max-height: 100px; /* Adjust max height of the icon */
+  margin-bottom: 10px;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-bar-container {
+  width: 100%;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.skill-bar {
+  height: 100%;
+  background-color: green;
+  border-radius: 5px;
+}
+
+.skill-percentage {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+a{
+  text-decoration: none;
+  color: #f5c002;
+}
+
+
+
+
