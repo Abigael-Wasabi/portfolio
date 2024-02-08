@@ -40,7 +40,7 @@ function App() {
   ];
 
   return (
-    <Container style={{ padding: '15px', fontFamily: 'cursive', background: 'linear-gradient(135deg, #8ED6ff, #aa336a)' }}>
+    <Container style={{ padding: '15px',maxWidth:'500px', fontFamily: 'cursive', background: 'linear-gradient(135deg, #8ED6ff, #aa336a)' }}>
       <Row>
         <About />
       </Row>

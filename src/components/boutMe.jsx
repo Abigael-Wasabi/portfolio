@@ -3,7 +3,7 @@ import { Col } from 'react-bootstrap';
 
 
 function About() {
-let imgsrc;imgsrc=require('../assets/me.jpg');
+// let imgsrc;imgsrc=require('../assets/me.jpg');
   return (
     <>
       <Col>
@@ -19,7 +19,7 @@ let imgsrc;imgsrc=require('../assets/me.jpg');
             </div>
         </Col>
         <Col>
-        <img style={{width: '400px', height: '400px', borderRadius:'50%'}} src={imgsrc} alt="me"></img>
+        {/* <img style={{width: '400px', height: '400px', borderRadius:'50%'}} src={imgsrc} alt="me"></img> */}
         </Col>
     </>
   )
