@@ -5,6 +5,7 @@ import Contact from './components/contact';
 import Footer from './components/footer';
 import About from './components/boutMe';
 import Projects from './components/projects';
+import Services from './components/services';
 import './App.css';
 import htmlIcon from './assets/htmlicon.png';
 import cssIcon from './assets/cssicon.png';
@@ -29,7 +30,7 @@ function App() {
     { icon: tailwindIcon, percentage: 50 },
     { icon: jsIcon, percentage: 60 },
     { icon: reactIcon, percentage: 80 },
-    { icon: vueIcon, percentage: 40 },
+    { icon: vueIcon, percentage: 60 },
     { icon: mysqlIcon, percentage: 40 },
     { icon: mongoDBIcon, percentage: 40 },
     { icon: nodeIcon, percentage: 50 },
@@ -40,30 +41,41 @@ function App() {
   ];
 
   return (
-    <Container style={{ padding: '15px',maxWidth:'500px', fontFamily: 'cursive', background: 'linear-gradient(135deg, #8ED6ff, #aa336a)' }}>
+    <Container style={{ padding: '15px',maxWidth:'900px', background: 'linear-gradient(135deg, #8ED6ff, #aa336a)' }}>
+      <hr></hr>
       <Row>
-        <About />
-      </Row>
-
-      <Row style={{ backgroundColor: 'transparent'}}>
+        <Col>
+          <About />
+        </Col>
+        <Col>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <b>MY STACK</b>
         </div>
         <SkillRow skills={skillsData} />
-      </Row>
-
-      <Row style={{ backgroundColor: 'transparent'}}>
-        <Projects />
-      </Row>
-
-      <Row style={{ backgroundColor: 'transparent'}}>
-        <Col style={{ textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          Reach out to me
         </Col>
-        <Col style={{ textAlign: 'center' }}>
+      </Row><hr></hr>
+
+      
+      <Row>
+        <Col>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <b>SERVICE REPERTOIRE</b>
+        </div>
+        <Services/>
+        </Col>
+      </Row><hr></hr>
+
+      <Row style={{ backgroundColor: 'transparent'}}>
+        <Col>
+        <Projects />
+        </Col>
+
+      
+        <Col style={{ textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <b>Reach out to me</b>
           <Contact />
         </Col>
-      </Row>
+      </Row><hr></hr>
 
       <Footer />
     </Container>

@@ -1,33 +1,33 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
-import { Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 
 const YourComponent = () => {
     return (
-        <Col style={{ textAlign: 'center' }}>
-            <a href="https://www.linkedin.com/in/abigael-wanjala-96a7b5265/">
-                software developer
+        <Row style={{ textAlign: 'center' }}>
+            <a target='_blank' href="https://www.linkedin.com/in/abigael-wanjala-96a7b5265/" rel="noreferrer">
+            Doting coder
                 <div>
                     <FontAwesomeIcon icon={faLinkedin} size="2x" />
                 </div>
             </a>
-            <a href="https://github.com/Abigael-Wasabi">my game plan
+            <a target='_blank' href="https://github.com/Abigael-Wasabi" rel="noreferrer">My game plan
                 <div>
                     <FontAwesomeIcon icon={faGithub} size="2x" />
                 </div>
             </a>
-            <a href="tel:+254111583196">reach out to me
+            <a target='_blank' href="tel:+254111583196" rel="noreferrer">Drop me a line
                 <div>
                     <FontAwesomeIcon icon={faPhone} size="2x" />
                 </div>
             </a>
-            <a href="mailto:abiwasabi03@gmail.com">let's connect
+            <a target='_blank' href="mailto:abiwasabi03@gmail.com" rel="noreferrer">Let's connect
                 <div>
                     <FontAwesomeIcon icon={faEnvelope} size="2x" />
                 </div>
             </a>
-        </Col>
+        </Row>
     );
 }
 

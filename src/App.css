@@ -38,7 +38,10 @@
 } */
 a{
   text-decoration: none;
-  color: #f5c002;
+  color: black;
+}
+a:hover {
+  color: rgb(218,243,239);
 }
 
 body {
@@ -97,3 +100,37 @@ body {
 .skill-name {
   margin-top: 5px;
 }
+p {
+  text-align: center;
+  color: black;
+  transition: color 0.3s;
+}
+
+p:hover {
+  color: rgb(218,243,239);
+}
+
+.col-container {
+  transition: transform 1s;
+}
+
+.col-container:hover {
+  transform: translateY(20px);
+}
+
+
+
+/* .image-sticker {
+  position:fixed;
+  bottom: 120px; 
+  right: 620px; 
+  transform: rotate(-15deg);
+  opacity: 0.5;
+}
+
+.image-sticker img {
+ width: 100px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid white; 
+} */
