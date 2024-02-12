@@ -6,7 +6,7 @@ function Projects() {
     <>
       <Row style={{textAlign: 'center', display: 'flex', alignItems: 'center',justifyContent: 'center'}}>
           <b>MY BLUEPRINTS</b>
-          <a href="vpms">VEHICLE PARKING MANAGEMENT SYSTEM</a><br></br>
+          <a target='_blank' href="https://swiftpark-u-imain.vercel.app/" rel="noreferrer">VEHICLE PARKING MANAGEMENT SYSTEM</a><br></br>
           <a href="whta">WHTA NETWORKS WEBSITE</a>
         
         </Row>
