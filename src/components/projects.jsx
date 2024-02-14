@@ -6,8 +6,8 @@ function Projects() {
     <>
       <Row style={{textAlign: 'center', display: 'flex', alignItems: 'center',justifyContent: 'center'}}>
           <b>MY BLUEPRINTS</b>
-          <a target='_blank' href="https://swiftpark-u-imain.vercel.app/" rel="noreferrer">VEHICLE PARKING MANAGEMENT SYSTEM</a><br></br>
-          <a href="whta">WHTA NETWORKS WEBSITE</a>
+          <li><a target='_blank' href="https://swiftpark-u-imain.vercel.app/" rel="noreferrer">VEHICLE PARKING MANAGEMENT SYSTEM</a></li><br></br>
+          <li><a href="whta">WHTA NETWORKS WEBSITE</a><p>(still under development)</p></li>
         
         </Row>
     </>
