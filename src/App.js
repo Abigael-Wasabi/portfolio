@@ -10,6 +10,7 @@ import './App.css';
 import htmlIcon from './assets/htmlicon.png';
 import cssIcon from './assets/cssicon.png';
 import bs5Icon from './assets/bs5icon.png';
+import sass from './assets/scss.png';
 import tailwindIcon from './assets/tailwind.png';
 import jsIcon from './assets/jsicon.png';
 import reactIcon from './assets/react.webp';
@@ -28,6 +29,7 @@ function App() {
     { icon: cssIcon, percentage: 90 },
     { icon: bs5Icon, percentage: 90 },
     { icon: tailwindIcon, percentage: 50 },
+    { icon: sass, percentage: 30},
     { icon: jsIcon, percentage: 60 },
     { icon: reactIcon, percentage: 80 },
     { icon: vueIcon, percentage: 60 },
