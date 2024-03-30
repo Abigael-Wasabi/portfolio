@@ -166,3 +166,35 @@ p:hover {
   height: 100%;
   /* overflow-y: auto; */
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  }
+
+  .social-links i {
+  padding: 10px;
+  color: grey;
+  }
+
+  logos:hover {
+  transition: 0.45s;
+  transform: translateY(-5px);
+  }
+
+  .social-links a .fa-envelope:hover {
+  color: red;
+  }
+
+  .social-links a .fa-linkedin:hover {
+  color: red;
+  }
+
+  .social-links a .fa-github:hover {
+  color: black;
+  }
+
+  .social-links a .fa-phone:hover {
+  color: black;}

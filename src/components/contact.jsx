@@ -3,7 +3,7 @@ import { faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 import { Row } from 'react-bootstrap';
 
-const YourComponent = () => {
+const YourComponent = () => { 
     return (
         <Row style={{ textAlign: 'center' }}>
             <a target='_blank' href="https://www.linkedin.com/in/abigael-wanjala-96a7b5265/" rel="noreferrer">
