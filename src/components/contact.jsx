@@ -5,7 +5,8 @@ import { Row } from 'react-bootstrap';
 
 const YourComponent = () => { 
     return (
-        <Row style={{ textAlign: 'center' }}>
+        <Row style={{ textAlign: 'center', fontFamily:'cursive', fontSize:'12px'}}>
+          <b style={{fontFamily:'cursive', fontSize:'12px'}}>Reach out to me</b>
             <a target='_blank' href="https://www.linkedin.com/in/abigael-wanjala-96a7b5265/" rel="noreferrer">
             Doting coder
                 <div>

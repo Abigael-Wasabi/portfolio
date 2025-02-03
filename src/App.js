@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import SkillRow from './components/skills';
 import Contact from './components/contact';
 import Footer from './components/footer';
@@ -22,65 +23,57 @@ import phpIcon from './assets/php.png';
 import laravelIcon from './assets/laravel.png';
 import androidIcon from './assets/andr.png';
 import KotlinIcon from './assets/Kotlin_Icon.png';
+import stackImage from './assets/stack.jpg';
 
 function App() {
   const skillsData = [
-    { icon: htmlIcon, percentage: 90 },
-    { icon: cssIcon, percentage: 90 },
-    { icon: bs5Icon, percentage: 90 },
-    { icon: tailwindIcon, percentage: 50 },
-    { icon: sass, percentage: 30},
-    { icon: jsIcon, percentage: 60 },
-    { icon: reactIcon, percentage: 80 },
-    { icon: vueIcon, percentage: 60 },
-    { icon: mysqlIcon, percentage: 40 },
-    { icon: mongoDBIcon, percentage: 40 },
-    { icon: nodeIcon, percentage: 50 },
-    { icon: phpIcon, percentage: 40 },
-    { icon: laravelIcon, percentage: 40 },
-    { icon: androidIcon, percentage: 30 },
-    { icon: KotlinIcon, percentage: 30 },
+    { icon: htmlIcon},
+    { icon: cssIcon},
+    { icon: bs5Icon},
+    { icon: tailwindIcon},
+    { icon: sass},
+    { icon: jsIcon},
+    { icon: reactIcon},
+    { icon: vueIcon},
+    { icon: mysqlIcon},
+    { icon: mongoDBIcon},
+    { icon: nodeIcon},
+    { icon: phpIcon},
+    { icon: laravelIcon},
+    { icon: androidIcon},
+    { icon: KotlinIcon},
   ];
 
   return (
-    <Container style={{ padding: '15px',maxWidth:'900px', background: 'linear-gradient(135deg, #8ED6ff, #aa336a)' }}>
+    <Router>
+    <Container style={{ padding: '15px',fontFamily:'cursive', maxWidth:'500px',height:'100vh', background: 'linear-gradient(135deg, #8ED6ff, #aa336a)' }}>
+      <nav style={{ textAlign: 'center',fontSize:'12px', marginBottom:'-10px' }}>
+          <Link style={{marginRight:'5px'}} to="/">About</Link>
+          <Link style={{marginRight:'5px'}} to="/skillrow">TechStack</Link>
+          <Link style={{marginRight:'5px'}} to="/services">Services</Link>
+          <Link style={{marginRight:'5px'}} to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
+      </nav>
       <hr></hr>
-      <Row>
-        <Col>
-          <About />
-        </Col>
-        <Col>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <b>MY STACK</b>
-        </div>
-        <SkillRow skills={skillsData} />
-        </Col>
-      </Row><hr></hr>
+
+      <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/skillrow" element={<SkillRow skills={skillsData}/>} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <hr></hr>
 
       
-      <Row>
-        <Col>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <b>SERVICE REPERTOIRE</b>
-        </div>
-        <Services/>
-        </Col>
-      </Row><hr></hr>
+    
 
-      <Row style={{ backgroundColor: 'transparent'}}>
-        <Col>
-        <Projects />
-        </Col>
-
-      
-        <Col style={{ textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <b>Reach out to me</b>
-          <Contact />
-        </Col>
-      </Row><hr></hr>
-
-      <Footer />
+      <Footer style={{
+        position:'fixed',
+        marginBottom:'0',
+      }}/>
     </Container>
+    </Router>
   )
 };
 

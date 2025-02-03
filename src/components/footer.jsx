@@ -8,24 +8,8 @@ const Footer = () => {
 
   return (
     <>
-      <i><p style={{textAlign:'center'}}>&copy; {currentYear} Abiwasabi. All Rights Reserved.</p></i>
-      {/* <div style={{textAlign:'center'}} className='social'>
-          <a target='_blank' href="mailto:abiwasabi03@gmail.com" rel="noreferrer">
-                    <i className="fas fa-envelope logos"></i>
-          </a>
-          <a target='_blank' href="mailto:abiwasabi03@gmail.com" rel="noreferrer">
-                    <i className="fas fa-phone logos"></i>
-
-          </a>
-          <a target='_blank' href="mailto:abiwasabi03@gmail.com" rel="noreferrer">
-                    <i className="fab fa-linkedin logos"></i>
-
-          </a>
-          <a target='_blank' href="mailto:abiwasabi03@gmail.com" rel="noreferrer">
-                    <i className="fab fa-github logos"></i>
-
-          </a>
-      </div> */}
+      <i><p style={{textAlign:'center', fontSize:'12px'}}>&copy; {currentYear} Abiwasabi. All Rights Reserved.</p></i>
+      
     </>
   );
 };

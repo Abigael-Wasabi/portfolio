@@ -40,9 +40,9 @@ a{
   text-decoration: none;
   color: black;
 }
-a:hover {
+/* a:hover {
   color: rgb(218,243,239);
-}
+} */
 
 body {
   background-color: transparent !important;
@@ -63,18 +63,18 @@ body {
 
 .skill-circle {
   position: relative;
-  width: 80px;
-  height: 80px; 
-  border-radius: 50%;
-  background-color: #ffe7e7;
+  width: 40px;
+  height: 40px;  
+  /* border-radius: 50%; */
+  /* background-color: #ffe7e7; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .skill-icon {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 40px;
+  max-height: 40px;
   border-radius: 50%;
 }
 
@@ -106,9 +106,9 @@ p {
   transition: color 0.3s;
 }
 
-p:hover {
+/* p:hover {
   color: rgb(218,243,239);
-}
+} */
 
 .col-container {
   transition: transform 1s;
